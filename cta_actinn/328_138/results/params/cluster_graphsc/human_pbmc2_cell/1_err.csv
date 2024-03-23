@@ -1,0 +1,27 @@
+,params.0.Log1P.base,params.1.FilterGenesPercentile.max_val,params.1.FilterGenesPercentile.min_val,params.1.FilterGenesPercentile.mode,params.2.FilterCellsScanpyOrder.max_counts,params.2.FilterCellsScanpyOrder.max_genes,params.2.FilterCellsScanpyOrder.min_counts,params.2.FilterCellsScanpyOrder.min_genes,params.2.FilterCellsScanpyOrder.order,params.3.WeightedFeatureSVD.feat_norm_mode,params.3.WeightedFeatureSVD.n_components,info,run_id
+0,6.736723591243678,97,4,sum,13421,0.9774158863914976,805,0.029215478312472277,"['max_counts', 'min_genes', 'min_counts', 'max_genes']",minmax,0.8406532701989475,"wandb: ERROR Run ct5mj3l6 errored:
+wandb: ERROR Traceback (most recent call last):
+wandb: ERROR   File ""/home/zyxing/anaconda3/envs/dance-env/lib/python3.11/site-packages/wandb/agents/pyagent.py"", line 308, in _run_job
+wandb: ERROR     self._function()
+wandb: ERROR   File ""/home/zyxing/dance/examples/tuning/cluster_graphsc/main.py"", line 70, in evaluate_pipeline
+wandb: ERROR     preprocessing_pipeline(data)
+wandb: ERROR   File ""/home/zyxing/dance/dance/pipeline.py"", line 114, in __call__
+wandb: ERROR     return self.functional(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File ""/home/zyxing/dance/dance/pipeline.py"", line 232, in bounded_functional
+wandb: ERROR     a(*args, **kwargs)
+wandb: ERROR   File ""/home/zyxing/dance/dance/pipeline.py"", line 114, in __call__
+wandb: ERROR     return self.functional(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File ""/home/zyxing/dance/dance/transforms/cell_feature.py"", line 98, in __call__
+wandb: ERROR     svd.fit_transform(feat)
+wandb: ERROR   File ""/home/zyxing/anaconda3/envs/dance-env/lib/python3.11/site-packages/sklearn/utils/_set_output.py"", line 157, in wrapped
+wandb: ERROR     data_to_wrap = f(self, X, *args, **kwargs)
+wandb: ERROR                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File ""/home/zyxing/anaconda3/envs/dance-env/lib/python3.11/site-packages/sklearn/base.py"", line 1145, in wrapper
+wandb: ERROR     estimator._validate_params()
+wandb: ERROR   File ""/home/zyxing/anaconda3/envs/dance-env/lib/python3.11/site-packages/sklearn/base.py"", line 638, in _validate_params
+wandb: ERROR     validate_parameter_constraints(
+wandb: ERROR   File ""/home/zyxing/anaconda3/envs/dance-env/lib/python3.11/site-packages/sklearn/utils/_param_validation.py"", line 96, in validate_parameter_constraints
+wandb: ERROR     raise InvalidParameterError(
+wandb: ERROR sklearn.utils._param_validation.InvalidParameterError: The 'n_components' parameter of TruncatedSVD must be an int in the range [1, inf). Got -1 instead.",ct5mj3l6
