@@ -1,0 +1,49 @@
+,params.0.Log1P.base,params.2.FilterCellsScanpyOrder.max_counts,params.2.FilterCellsScanpyOrder.max_genes,params.2.FilterCellsScanpyOrder.min_counts,params.2.FilterCellsScanpyOrder.min_genes,params.2.FilterCellsScanpyOrder.order,params.3.WeightedFeaturePCA.feat_norm_mode,params.3.WeightedFeaturePCA.n_components,info,run_id
+0,9.22684371920346,50604,0.978679293021609,986,0.03342426866433972,"['max_counts', 'min_genes', 'min_counts', 'max_genes']",minmax,0.9303076215887124,"wandb: ERROR Run owepvrum errored:
+wandb: ERROR Traceback (most recent call last):
+wandb: ERROR   File ""/home/zyxing/anaconda3/envs/dance-env/lib/python3.11/site-packages/wandb/agents/pyagent.py"", line 308, in _run_job
+wandb: ERROR     self._function()
+wandb: ERROR   File ""/home/zyxing/dance/examples/tuning/cluster_graphsc/main.py"", line 70, in evaluate_pipeline
+wandb: ERROR     preprocessing_pipeline(data)
+wandb: ERROR   File ""/home/zyxing/dance/dance/pipeline.py"", line 114, in __call__
+wandb: ERROR     return self.functional(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File ""/home/zyxing/dance/dance/pipeline.py"", line 232, in bounded_functional
+wandb: ERROR     a(*args, **kwargs)
+wandb: ERROR   File ""/home/zyxing/dance/dance/pipeline.py"", line 114, in __call__
+wandb: ERROR     return self.functional(*args, **kwargs)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File ""/home/zyxing/dance/dance/transforms/cell_feature.py"", line 47, in __call__
+wandb: ERROR     feat = normalize(feat, mode=self.feat_norm_mode, axis=self.feat_norm_axis)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File ""/home/zyxing/dance/dance/utils/matrix.py"", line 37, in normalize
+wandb: ERROR     min_vals = mat.min(**opts)[0] if is_torch else mat.min(**opts)
+wandb: ERROR                                                    ^^^^^^^^^^^^^^^
+wandb: ERROR   File ""/home/zyxing/anaconda3/envs/dance-env/lib/python3.11/site-packages/numpy/core/_methods.py"", line 45, in _amin
+wandb: ERROR     return umr_minimum(a, axis, None, out, keepdims, initial, where)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR ValueError: zero-size array to reduction operation minimum which has no identity",owepvrum
+1,5.899806845561241,22240,0.9663109224755972,910,0.002753019862439222,"['min_counts', 'max_genes', 'max_counts', 'min_genes']",None,0.8213154198017156,"wandb: ERROR Run jk29saez errored:
+wandb: ERROR Traceback (most recent call last):
+wandb: ERROR   File ""/home/zyxing/anaconda3/envs/dance-env/lib/python3.11/site-packages/wandb/agents/pyagent.py"", line 308, in _run_job
+wandb: ERROR     self._function()
+wandb: ERROR   File ""/home/zyxing/dance/examples/tuning/cluster_graphsc/main.py"", line 88, in evaluate_pipeline
+wandb: ERROR     score = model.score(None, y)
+wandb: ERROR             ^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File ""/home/zyxing/dance/dance/modules/base.py"", line 51, in score
+wandb: ERROR     y_pred = self.predict(x)
+wandb: ERROR              ^^^^^^^^^^^^^^^
+wandb: ERROR   File ""/home/zyxing/dance/dance/modules/single_modality/clustering/graphsc.py"", line 265, in predict
+wandb: ERROR     pred = run_leiden(self.z)
+wandb: ERROR            ^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File ""/home/zyxing/dance/dance/modules/single_modality/clustering/graphsc.py"", line 581, in run_leiden
+wandb: ERROR     sc.tl.leiden(adata)
+wandb: ERROR   File ""/home/zyxing/anaconda3/envs/dance-env/lib/python3.11/site-packages/scanpy/tools/_leiden.py"", line 129, in leiden
+wandb: ERROR     g = _utils.get_igraph_from_adjacency(adjacency, directed=directed)
+wandb: ERROR         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+wandb: ERROR   File ""/home/zyxing/anaconda3/envs/dance-env/lib/python3.11/site-packages/scanpy/_utils/__init__.py"", line 218, in get_igraph_from_adjacency
+wandb: ERROR     g.es['weight'] = weights
+wandb: ERROR     ~~~~^^^^^^^^^^
+wandb: ERROR   File ""/home/zyxing/anaconda3/envs/dance-env/lib/python3.11/site-packages/scipy/sparse/_base.py"", line 340, in __len__
+wandb: ERROR     raise TypeError(""sparse array length is ambiguous; use getnnz()""
+wandb: ERROR TypeError: sparse array length is ambiguous; use getnnz() or shape[0]",jk29saez
