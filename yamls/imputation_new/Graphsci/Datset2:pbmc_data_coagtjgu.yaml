@@ -1,0 +1,23 @@
+entity: xzy11632
+method: grid
+metric:
+  goal: minimize
+  name: MRE
+parameters:
+  pipeline.0.filter.gene:
+    values:
+    - FilterGenesScanpyOrder
+  pipeline.1.filter.cell:
+    values:
+    - FilterCellsScanpyOrder
+  pipeline.3.normalize:
+    values:
+    - Log1P
+    - NormalizePlaceHolder
+    - NormalizeTotal
+    - ScTransform
+    - ScaleFeature
+  pipeline.4.filter.gene:
+    values:
+    - FilterGenesNumberPlaceHolder
+project: dance-dev

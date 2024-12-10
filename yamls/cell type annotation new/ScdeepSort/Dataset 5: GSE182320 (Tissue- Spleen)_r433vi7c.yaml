@@ -1,0 +1,30 @@
+entity: xzy11632
+method: grid
+metric:
+  goal: maximize
+  name: acc
+parameters:
+  pipeline.0.filter.gene:
+    values:
+    - FilterGenesPercentile
+    - FilterGenesPlaceHolder
+    - FilterGenesScanpyOrder
+  pipeline.1.normalize:
+    values:
+    - Log1P
+    - NormalizePlaceHolder
+    - NormalizeTotal
+    - ScTransform
+    - ScaleFeature
+  pipeline.2.filter.gene:
+    values:
+    - FilterGenesRegression
+    - FilterGenesTopK
+    - HighlyVariableGenesLogarithmizedByMeanAndDisp
+    - HighlyVariableGenesLogarithmizedByTopGenes
+    - HighlyVariableGenesRawCount
+  pipeline.3.feature.cell:
+    values:
+    - WeightedFeaturePCA
+    - WeightedFeatureSVD
+project: dance-dev

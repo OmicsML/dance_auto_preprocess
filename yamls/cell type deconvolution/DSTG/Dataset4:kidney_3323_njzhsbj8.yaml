@@ -1,0 +1,36 @@
+entity: xzy11632
+method: grid
+metric:
+  goal: minimize
+  name: MSE
+parameters:
+  pipeline.3.filter.gene:
+    values:
+    - FilterGenesPercentile
+    - FilterGenesPlaceHolder
+    - FilterGenesScanpyOrder
+  pipeline.4.normalize:
+    values:
+    - Log1P
+    - NormalizePlaceHolder
+    - NormalizeTotal
+    - NormalizeTotalLog1P
+    - ScTransform
+    - ScaleFeature
+  pipeline.5.filter.gene:
+    values:
+    - FilterGenesNumberPlaceHolder
+    - FilterGenesRegression
+    - FilterGenesTopK
+    - HighlyVariableGenesLogarithmizedByMeanAndDisp
+    - HighlyVariableGenesLogarithmizedByTopGenes
+    - HighlyVariableGenesRawCount
+  pipeline.6.feature.cell:
+    values:
+    - CellPCA
+    - CellSVD
+    - FeatureCellPlaceHolder
+    - GaussRandProjFeature
+    - WeightedFeaturePCA
+    - WeightedFeatureSVD
+project: dance-dev

@@ -1,0 +1,38 @@
+entity: xzy11632
+method: grid
+metric:
+  goal: maximize
+  name: ARI
+parameters:
+  pipeline.0.filter.gene:
+    values:
+    - FilterGenesPercentile
+    - FilterGenesPlaceHolder
+    - FilterGenesScanpyOrder
+  pipeline.1.filter.gene:
+    values:
+    - FilterGenesMatch
+  pipeline.2.normalize:
+    values:
+    - Log1P
+    - NormalizePlaceHolder
+    - NormalizeTotal
+    - NormalizeTotalLog1P
+    - ScTransform
+    - ScaleFeature
+  pipeline.3.filter.gene:
+    values:
+    - FilterGenesNumberPlaceHolder
+    - FilterGenesRegression
+    - FilterGenesTopK
+    - HighlyVariableGenesLogarithmizedByMeanAndDisp
+    - HighlyVariableGenesLogarithmizedByTopGenes
+    - HighlyVariableGenesRawCount
+  pipeline.4.feature.cell:
+    values:
+    - CellPCA
+    - CellSVD
+    - GaussRandProjFeature
+    - WeightedFeaturePCA
+    - WeightedFeatureSVD
+project: dance-dev
