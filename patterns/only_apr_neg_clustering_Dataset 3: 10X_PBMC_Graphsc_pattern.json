@@ -1,0 +1,73 @@
+{
+  "task": "clustering",
+  "dataset": "Dataset 3: 10X_PBMC",
+  "method": "Graphsc",
+  "pattern": {
+    "apr_ans": [
+      [
+        "FilterCellsPlaceHolder"
+      ],
+      [
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "FilterGenesPercentile"
+      ],
+      [
+        "FilterGenesPlaceHolder"
+      ],
+      [
+        "FilterGenesTopK"
+      ],
+      [
+        "ScaleFeature"
+      ],
+      [
+        "WeightedFeaturePCA"
+      ],
+      [
+        "WeightedFeatureSVD"
+      ],
+      [
+        "ScaleFeature",
+        "FilterCellsPlaceHolder"
+      ],
+      [
+        "FilterCellsScanpyOrder",
+        "FilterGenesPercentile"
+      ],
+      [
+        "FilterGenesTopK",
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "FilterGenesTopK",
+        "FilterGenesPercentile"
+      ],
+      [
+        "ScaleFeature",
+        "FilterGenesPercentile"
+      ],
+      [
+        "WeightedFeaturePCA",
+        "FilterGenesPercentile"
+      ],
+      [
+        "WeightedFeatureSVD",
+        "FilterGenesPercentile"
+      ],
+      [
+        "FilterGenesPlaceHolder",
+        "ScaleFeature"
+      ],
+      [
+        "ScaleFeature",
+        "WeightedFeaturePCA"
+      ],
+      [
+        "WeightedFeatureSVD",
+        "ScaleFeature"
+      ]
+    ]
+  }
+}

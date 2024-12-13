@@ -1,0 +1,43 @@
+{
+  "task": "clustering",
+  "dataset": "Dataset 2:mouse_bladder_cell",
+  "method": "SCDCC",
+  "pattern": {
+    "apr_ans": [
+      [
+        "FilterCellsPlaceHolder"
+      ],
+      [
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "FilterGenesPlaceHolder"
+      ],
+      [
+        "FilterGenesScanpyOrder"
+      ],
+      [
+        "FilterGenesTopK"
+      ],
+      [
+        "ScaleFeature"
+      ],
+      [
+        "ScaleFeature",
+        "FilterCellsPlaceHolder"
+      ],
+      [
+        "ScaleFeature",
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "FilterGenesPlaceHolder",
+        "ScaleFeature"
+      ],
+      [
+        "FilterGenesScanpyOrder",
+        "ScaleFeature"
+      ]
+    ]
+  }
+}

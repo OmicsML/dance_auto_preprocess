@@ -1,0 +1,29 @@
+{
+  "task": "cell type deconvolution",
+  "dataset": "Dataset5:lung6",
+  "method": "DSTG",
+  "pattern": {
+    "apr_ans": [
+      [
+        "FilterGenesPercentile"
+      ],
+      [
+        "FilterGenesScanpyOrder"
+      ],
+      [
+        "NormalizePlaceHolder"
+      ],
+      [
+        "ScTransform"
+      ],
+      [
+        "NormalizePlaceHolder",
+        "FilterGenesPercentile"
+      ],
+      [
+        "FilterGenesScanpyOrder",
+        "ScTransform"
+      ]
+    ]
+  }
+}

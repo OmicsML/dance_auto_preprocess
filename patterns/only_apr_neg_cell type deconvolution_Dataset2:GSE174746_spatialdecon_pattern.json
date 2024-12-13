@@ -1,0 +1,33 @@
+{
+  "task": "cell type deconvolution",
+  "dataset": "Dataset2:GSE174746",
+  "method": "spatialdecon",
+  "pattern": {
+    "apr_ans": [
+      [
+        "FilterGenesPercentile"
+      ],
+      [
+        "FilterGenesScanpyOrder"
+      ],
+      [
+        "HighlyVariableGenesLogarithmizedByMeanAndDisp"
+      ],
+      [
+        "ScaleFeature"
+      ],
+      [
+        "ScaleFeature",
+        "FilterGenesPercentile"
+      ],
+      [
+        "FilterGenesScanpyOrder",
+        "ScaleFeature"
+      ],
+      [
+        "HighlyVariableGenesLogarithmizedByMeanAndDisp",
+        "ScaleFeature"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "task": "cell type annotation new",
+  "dataset": "Dataset 2:  CD8+ TIL atlas",
+  "method": "singleCellNet",
+  "pattern": {
+    "apr_ans": [
+      [
+        "FilterGenesPercentile"
+      ],
+      [
+        "FilterGenesScanpyOrder"
+      ],
+      [
+        "FilterGenesTopK"
+      ],
+      [
+        "NormalizePlaceHolder"
+      ],
+      [
+        "NormalizeTotal"
+      ],
+      [
+        "NormalizePlaceHolder",
+        "FilterGenesTopK"
+      ],
+      [
+        "NormalizeTotal",
+        "FilterGenesTopK"
+      ]
+    ]
+  }
+}

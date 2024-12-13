@@ -1,0 +1,53 @@
+{
+  "task": "clustering",
+  "dataset": "Dataset 9:mouse_kidney_10x",
+  "method": "Graphsc",
+  "pattern": {
+    "apr_ans": [
+      [
+        "FilterCellsPlaceHolder"
+      ],
+      [
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "FilterGenesPlaceHolder"
+      ],
+      [
+        "FilterGenesTopK"
+      ],
+      [
+        "NormalizePlaceHolder"
+      ],
+      [
+        "NormalizeTotal"
+      ],
+      [
+        "WeightedFeaturePCA"
+      ],
+      [
+        "WeightedFeatureSVD"
+      ],
+      [
+        "FilterGenesPlaceHolder",
+        "FilterCellsPlaceHolder"
+      ],
+      [
+        "FilterGenesTopK",
+        "FilterCellsPlaceHolder"
+      ],
+      [
+        "WeightedFeaturePCA",
+        "FilterCellsPlaceHolder"
+      ],
+      [
+        "FilterGenesPlaceHolder",
+        "WeightedFeaturePCA"
+      ],
+      [
+        "WeightedFeatureSVD",
+        "FilterGenesTopK"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "task": "clustering",
+  "dataset": "Dataset 7: mouse_lung_cell",
+  "method": "SCTAG",
+  "pattern": {
+    "apr_ans": [
+      [
+        "FilterCellsPlaceHolder"
+      ],
+      [
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "FilterGenesPercentile"
+      ],
+      [
+        "FilterGenesPlaceHolder"
+      ],
+      [
+        "FilterGenesScanpyOrder"
+      ],
+      [
+        "FilterGenesTopK"
+      ],
+      [
+        "NormalizeTotal"
+      ],
+      [
+        "FilterGenesTopK",
+        "FilterCellsPlaceHolder"
+      ],
+      [
+        "FilterGenesTopK",
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "FilterGenesTopK",
+        "FilterGenesPercentile"
+      ],
+      [
+        "FilterGenesPlaceHolder",
+        "FilterGenesTopK"
+      ],
+      [
+        "FilterGenesScanpyOrder",
+        "FilterGenesTopK"
+      ],
+      [
+        "NormalizeTotal",
+        "FilterGenesTopK"
+      ]
+    ]
+  }
+}

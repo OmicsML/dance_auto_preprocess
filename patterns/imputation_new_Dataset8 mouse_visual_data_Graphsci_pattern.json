@@ -1,0 +1,59 @@
+{
+  "task": "imputation_new",
+  "dataset": "Dataset8 mouse_visual_data",
+  "method": "Graphsci",
+  "pattern": {
+    "forest_model": {
+      "onehot__pipeline.3.normalize_NormalizeTotal": {
+        "shapiq": 0.4060986599922181,
+        "pointbiserialr": {
+          "r_pb": 0.6412147187239162,
+          "p_value": 0.24361696342515451
+        }
+      },
+      "onehot__pipeline.3.normalize_NormalizePlaceHolder": {
+        "shapiq": 0.19845923852920533,
+        "pointbiserialr": {
+          "r_pb": 0.5133053897169436,
+          "p_value": 0.37639677117484155
+        }
+      },
+      "onehot__pipeline.3.normalize_NormalizePlaceHolder x onehot__pipeline.3.normalize_NormalizeTotal": {
+        "shapiq": 0.07327084422111511,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.3.normalize_ScaleFeature": {
+        "shapiq": 0.06750612688064575,
+        "pointbiserialr": {
+          "r_pb": -0.5298947596296738,
+          "p_value": 0.3583758733990126
+        }
+      },
+      "onehot__pipeline.3.normalize_NormalizeTotal x onehot__pipeline.3.normalize_ScTransform": {
+        "shapiq": 0.042639250040054345,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.3.normalize_NormalizePlaceHolder x onehot__pipeline.3.normalize_ScTransform": {
+        "shapiq": 0.03489787530899049,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "best_params": {
+        "regressor__max_depth": 3,
+        "regressor__min_samples_leaf": 1,
+        "regressor__min_samples_split": 2,
+        "regressor__n_estimators": 10
+      },
+      "best_mse": NaN
+    },
+    "apr_ans": []
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "task": "spatial domain",
+  "dataset": "Dataset4:mpb",
+  "method": "Stagate",
+  "pattern": {
+    "apr_ans": [
+      [
+        "FilterGenesMatch"
+      ],
+      [
+        "FilterGenesPlaceHolder"
+      ],
+      [
+        "FilterGenesTopK"
+      ],
+      [
+        "ScaleFeature"
+      ],
+      [
+        "FilterGenesPlaceHolder",
+        "FilterGenesMatch"
+      ],
+      [
+        "FilterGenesMatch",
+        "FilterGenesTopK"
+      ],
+      [
+        "ScaleFeature",
+        "FilterGenesMatch"
+      ],
+      [
+        "FilterGenesPlaceHolder",
+        "ScaleFeature"
+      ],
+      [
+        "FilterGenesPlaceHolder",
+        "ScaleFeature",
+        "FilterGenesMatch"
+      ]
+    ]
+  }
+}

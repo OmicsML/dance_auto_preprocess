@@ -1,0 +1,40 @@
+{
+  "task": "clustering",
+  "dataset": "Dataset 6: mouse_kidney_drop",
+  "method": "SCDSC",
+  "pattern": {
+    "apr_ans": [
+      [
+        "FilterCellsPlaceHolder"
+      ],
+      [
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "FilterGenesPlaceHolder"
+      ],
+      [
+        "FilterGenesScanpyOrder"
+      ],
+      [
+        "ScaleFeature"
+      ],
+      [
+        "ScaleFeature",
+        "FilterCellsPlaceHolder"
+      ],
+      [
+        "ScaleFeature",
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "FilterGenesPlaceHolder",
+        "ScaleFeature"
+      ],
+      [
+        "FilterGenesScanpyOrder",
+        "ScaleFeature"
+      ]
+    ]
+  }
+}

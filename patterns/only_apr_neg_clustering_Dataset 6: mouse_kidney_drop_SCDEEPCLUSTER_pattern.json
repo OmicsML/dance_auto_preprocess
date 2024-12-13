@@ -1,0 +1,32 @@
+{
+  "task": "clustering",
+  "dataset": "Dataset 6: mouse_kidney_drop",
+  "method": "SCDEEPCLUSTER",
+  "pattern": {
+    "apr_ans": [
+      [
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "FilterGenesPlaceHolder"
+      ],
+      [
+        "FilterGenesScanpyOrder"
+      ],
+      [
+        "FilterGenesTopK"
+      ],
+      [
+        "ScaleFeature"
+      ],
+      [
+        "FilterGenesTopK",
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "ScaleFeature",
+        "FilterCellsScanpyOrder"
+      ]
+    ]
+  }
+}

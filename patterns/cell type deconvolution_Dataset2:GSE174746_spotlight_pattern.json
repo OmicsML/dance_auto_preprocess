@@ -1,0 +1,2366 @@
+{
+  "task": "cell type deconvolution",
+  "dataset": "Dataset2:GSE174746",
+  "method": "spotlight",
+  "pattern": {
+    "forest_model": {
+      "onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 0.007222728460650385,
+        "pointbiserialr": {
+          "r_pb": 0.47977423269460384,
+          "p_value": 1.307705357464121e-38
+        }
+      },
+      "onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 0.004943980095023983,
+        "pointbiserialr": {
+          "r_pb": 0.2535539971984859,
+          "p_value": 5.7810979166815784e-11
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder": {
+        "shapiq": 0.003857438068867346,
+        "pointbiserialr": {
+          "r_pb": 0.20216457283103748,
+          "p_value": 2.1027515284539676e-07
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotal": {
+        "shapiq": 0.0038539023626888457,
+        "pointbiserialr": {
+          "r_pb": 0.19950498681153167,
+          "p_value": 3.050116790051825e-07
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 0.003364658261448621,
+        "pointbiserialr": {
+          "r_pb": 0.41585228491345766,
+          "p_value": 1.7385658802999677e-28
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 0.003294034426866247,
+        "pointbiserialr": {
+          "r_pb": 0.4158522849134576,
+          "p_value": 1.7385658802999677e-28
+        }
+      },
+      "onehot__pipeline.1.normalize_ScaleFeature": {
+        "shapiq": 0.0027721709849453813,
+        "pointbiserialr": {
+          "r_pb": 0.11402553477742268,
+          "p_value": 0.003655006124895528
+        }
+      },
+      "onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 0.002580628361770835,
+        "pointbiserialr": {
+          "r_pb": 0.05383933520044606,
+          "p_value": 0.17103911425455076
+        }
+      },
+      "onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 0.0017374955485212594,
+        "pointbiserialr": {
+          "r_pb": -0.04670944032727723,
+          "p_value": 0.23507749396561484
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 0.0016214355959644647,
+        "pointbiserialr": {
+          "r_pb": 0.4158522849134576,
+          "p_value": 1.7385658802999677e-28
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 0.001579693487502576,
+        "pointbiserialr": {
+          "r_pb": 0.41585228491345766,
+          "p_value": 1.7385658802999677e-28
+        }
+      },
+      "onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 0.0013973445190326086,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 0.0012761224995965273,
+        "pointbiserialr": {
+          "r_pb": -0.009728421028182662,
+          "p_value": 0.8047744303376975
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_NormalizeTotal": {
+        "shapiq": 0.001211315511901969,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 0.0011968804426504486,
+        "pointbiserialr": {
+          "r_pb": 0.2179582446148991,
+          "p_value": 2.081070204433795e-08
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 0.0010827384553734932,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 0.0010396220146082589,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 0.0010242609325675097,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotalLog1P": {
+        "shapiq": 0.0008872691748782115,
+        "pointbiserialr": {
+          "r_pb": -0.2537081704496504,
+          "p_value": 5.623840405167139e-11
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder": {
+        "shapiq": 0.0008528495419746984,
+        "pointbiserialr": {
+          "r_pb": 0.040375044223400595,
+          "p_value": 0.304790280338782
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_ScaleFeature": {
+        "shapiq": 0.0008312693561728639,
+        "pointbiserialr": {
+          "r_pb": 0.10266485400793063,
+          "p_value": 0.008915218191271649
+        }
+      },
+      "onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 0.0007275064260019106,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 0.0007008257265720641,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 0.0006030607467999452,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 0.0005951780407288586,
+        "pointbiserialr": {
+          "r_pb": -0.012355181486391304,
+          "p_value": 0.7535845948717284
+        }
+      },
+      "onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_FilterGenesTopK": {
+        "shapiq": 0.0005906932040387687,
+        "pointbiserialr": {
+          "r_pb": 0.10719765159829443,
+          "p_value": 0.0063063483776732805
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_ScaleFeature": {
+        "shapiq": 0.0005247270889604091,
+        "pointbiserialr": {
+          "r_pb": 0.083484278980688,
+          "p_value": 0.0336058151735214
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 0.00046827760156503153,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_FilterGenesTopK": {
+        "shapiq": 0.0004576921298313123,
+        "pointbiserialr": {
+          "r_pb": 0.11422653216084887,
+          "p_value": 0.0035952065051856304
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.1.normalize_ScaleFeature": {
+        "shapiq": 0.00045268340332495633,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 0.00044949293845878715,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 0.00044533760845115336,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_NormalizeTotal": {
+        "shapiq": 0.00040245898285757215,
+        "pointbiserialr": {
+          "r_pb": 0.14714490787467005,
+          "p_value": 0.00017063107842691055
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 0.0003882810361033094,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 0.0003816843157786929,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.2.filter.gene_FilterGenesTopK": {
+        "shapiq": 0.00038080989221649954,
+        "pointbiserialr": {
+          "r_pb": -0.158132808060798,
+          "p_value": 5.274962594665348e-05
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 0.00036546209933572274,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 0.0003637782816158973,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_NormalizePlaceHolder": {
+        "shapiq": 0.0003592595422835375,
+        "pointbiserialr": {
+          "r_pb": 0.1444640635953705,
+          "p_value": 0.00022449522433078947
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.1.normalize_ScTransform": {
+        "shapiq": 0.000355246440525546,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 0.0003537399080166304,
+        "pointbiserialr": {
+          "r_pb": 0.024387155042930656,
+          "p_value": 0.5354624300440366
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_ScaleFeature": {
+        "shapiq": 0.0003322446984766135,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 0.0002981266561670726,
+        "pointbiserialr": {
+          "r_pb": 0.23783798970993236,
+          "p_value": 8.74023705897373e-10
+        }
+      },
+      "onehot__pipeline.1.normalize_ScTransform": {
+        "shapiq": 0.00027700583969252236,
+        "pointbiserialr": {
+          "r_pb": -0.1468575069160888,
+          "p_value": 0.0001757637950988375
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 0.00027322978873342183,
+        "pointbiserialr": {
+          "r_pb": 0.23783798970993236,
+          "p_value": 8.74023705897373e-10
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 0.00027209128034027424,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 0.00026288697967428884,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 0.0002618335207671729,
+        "pointbiserialr": {
+          "r_pb": -0.02515851420909609,
+          "p_value": 0.5226304481361718
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 0.0002597938649893617,
+        "pointbiserialr": {
+          "r_pb": 0.1497835442792405,
+          "p_value": 0.0001296537651908367
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.2.filter.gene_FilterGenesTopK": {
+        "shapiq": 0.0002447033586144889,
+        "pointbiserialr": {
+          "r_pb": -0.07446787930862404,
+          "p_value": 0.058143560100671864
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.1.normalize_ScaleFeature": {
+        "shapiq": 0.0002444855516286229,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.1.normalize_ScTransform": {
+        "shapiq": 0.0002287231213727224,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_ScaleFeature": {
+        "shapiq": 0.00022504808796857702,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 0.00022128748016418012,
+        "pointbiserialr": {
+          "r_pb": 0.2722750033896111,
+          "p_value": 1.7731388950703812e-12
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 0.00021839599645572452,
+        "pointbiserialr": {
+          "r_pb": -0.024593453746088845,
+          "p_value": 0.5320150826561332
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_ScTransform": {
+        "shapiq": 0.0002080146634449702,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_FilterGenesTopK x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 0.00020649475258234317,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_FilterGenesTopK x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 0.00018546303449847333,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_NormalizeTotalLog1P": {
+        "shapiq": 0.00018280139675523735,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.1.normalize_ScaleFeature": {
+        "shapiq": 0.00018184288613283132,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_NormalizeTotal": {
+        "shapiq": 0.00018050710497736802,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_ScTransform": {
+        "shapiq": 0.00017981068364700487,
+        "pointbiserialr": {
+          "r_pb": -0.06574730630030534,
+          "p_value": 0.09447868652593298
+        }
+      },
+      "onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.1.normalize_ScaleFeature": {
+        "shapiq": 0.0001794714312488447,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.1.normalize_NormalizeTotalLog1P": {
+        "shapiq": 0.0001746002650602363,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 0.00017327353810955634,
+        "pointbiserialr": {
+          "r_pb": 0.23783798970993242,
+          "p_value": 8.740237058973917e-10
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 0.0001542410722091815,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 0.000150038915908565,
+        "pointbiserialr": {
+          "r_pb": 0.05222240439900822,
+          "p_value": 0.18427564553467823
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 0.00014656249981279118,
+        "pointbiserialr": {
+          "r_pb": 0.2378379897099324,
+          "p_value": 8.74023705897373e-10
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder": {
+        "shapiq": 0.0001421226245531967,
+        "pointbiserialr": {
+          "r_pb": -0.011027778683977854,
+          "p_value": 0.7793333196748155
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.2.filter.gene_FilterGenesTopK": {
+        "shapiq": 0.0001408000205318027,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 0.00013957837067804456,
+        "pointbiserialr": {
+          "r_pb": 0.010716590431764888,
+          "p_value": 0.7854059855542831
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_ScaleFeature": {
+        "shapiq": 0.0001357853599280577,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.1.normalize_ScaleFeature": {
+        "shapiq": 0.00013493354314350782,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.2.filter.gene_FilterGenesTopK x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 0.00013394732421935884,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 0.00012824131782203607,
+        "pointbiserialr": {
+          "r_pb": -0.003782496883133842,
+          "p_value": 0.923440284335641
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_NormalizeTotalLog1P": {
+        "shapiq": 0.00012728855001092803,
+        "pointbiserialr": {
+          "r_pb": -0.14587858671716797,
+          "p_value": 0.00019435422151205728
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 0.00012378172793030439,
+        "pointbiserialr": {
+          "r_pb": 0.006924540112130572,
+          "p_value": 0.8603475271222117
+        }
+      },
+      "onehot__pipeline.2.filter.gene_FilterGenesTopK x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 0.00011855076683192014,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.1.normalize_ScaleFeature": {
+        "shapiq": 0.00011731741741674112,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.1.normalize_ScaleFeature": {
+        "shapiq": 0.00011491392849477766,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 0.0001126583713902675,
+        "pointbiserialr": {
+          "r_pb": -0.05825082697963081,
+          "p_value": 0.1385482368470537
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_FilterGenesTopK": {
+        "shapiq": 0.00011191168629665753,
+        "pointbiserialr": {
+          "r_pb": 0.07665010673111271,
+          "p_value": 0.05114086628206885
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 0.00011071702727373666,
+        "pointbiserialr": {
+          "r_pb": 0.008302473487137111,
+          "p_value": 0.8329324877993196
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder": {
+        "shapiq": 0.00010501738172118041,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 0.0001019286151542028,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 9.774049691082329e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 9.526882851532614e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 9.370372737574169e-05,
+        "pointbiserialr": {
+          "r_pb": 0.013848525918758842,
+          "p_value": 0.7249416392561059
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.1.normalize_NormalizeTotalLog1P": {
+        "shapiq": 9.295910784186211e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.2.filter.gene_FilterGenesTopK x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 9.129212890253234e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.1.normalize_ScaleFeature": {
+        "shapiq": 8.941736431156867e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_NormalizeTotalLog1P": {
+        "shapiq": 8.798843794834062e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.2.filter.gene_FilterGenesTopK": {
+        "shapiq": 8.63812636461665e-05,
+        "pointbiserialr": {
+          "r_pb": -0.057674366730484976,
+          "p_value": 0.1425023257747708
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.1.normalize_ScaleFeature": {
+        "shapiq": 8.509035817698419e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.1.normalize_ScaleFeature": {
+        "shapiq": 8.262503745366891e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.2.filter.gene_FilterGenesTopK x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 8.205126309765371e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.1.normalize_ScaleFeature": {
+        "shapiq": 8.190157930315619e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.1.normalize_ScaleFeature": {
+        "shapiq": 8.18954600435496e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.1.normalize_ScTransform": {
+        "shapiq": 8.03452311425593e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.1.normalize_ScTransform": {
+        "shapiq": 7.89747160829149e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_ScTransform": {
+        "shapiq": 7.76520377973634e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.1.normalize_ScTransform": {
+        "shapiq": 7.715563206629258e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 7.688197846801802e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_NormalizeTotalLog1P": {
+        "shapiq": 7.265417036011837e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 7.218652033488351e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 6.559865149912315e-05,
+        "pointbiserialr": {
+          "r_pb": -0.030336939255570374,
+          "p_value": 0.44074318485187014
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_NormalizeTotalLog1P": {
+        "shapiq": 6.0144946373136594e-05,
+        "pointbiserialr": {
+          "r_pb": -0.14510413075100256,
+          "p_value": 0.00021035134598594856
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.1.normalize_ScTransform": {
+        "shapiq": 5.987910657741734e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.1.normalize_NormalizeTotalLog1P": {
+        "shapiq": 5.704280150318482e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 5.597841777069145e-05,
+        "pointbiserialr": {
+          "r_pb": -0.05550692020898845,
+          "p_value": 0.15814566872685304
+        }
+      },
+      "onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 5.415316883460732e-05,
+        "pointbiserialr": {
+          "r_pb": 0.09583440293050881,
+          "p_value": 0.014668783032225723
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_ScTransform": {
+        "shapiq": 5.3645348004221454e-05,
+        "pointbiserialr": {
+          "r_pb": -0.08762626435002606,
+          "p_value": 0.02570857559531106
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 5.1942447442062275e-05,
+        "pointbiserialr": {
+          "r_pb": 0.040488987022016205,
+          "p_value": 0.30342638728282223
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 5.030263035091129e-05,
+        "pointbiserialr": {
+          "r_pb": -0.03492744916679403,
+          "p_value": 0.3747226302217482
+        }
+      },
+      "onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 4.9824906066395546e-05,
+        "pointbiserialr": {
+          "r_pb": 0.043097601161743875,
+          "p_value": 0.2733078604008095
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 4.96636529293594e-05,
+        "pointbiserialr": {
+          "r_pb": 0.053679924363280625,
+          "p_value": 0.17231162587063042
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 4.858925292776803e-05,
+        "pointbiserialr": {
+          "r_pb": 0.13467262439016492,
+          "p_value": 0.0005876381328513634
+        }
+      },
+      "onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 4.848572550462332e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.1.normalize_ScTransform": {
+        "shapiq": 4.827768475161851e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 4.7866673379139624e-05,
+        "pointbiserialr": {
+          "r_pb": 0.1813376150238224,
+          "p_value": 3.388275438475345e-06
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.1.normalize_ScTransform": {
+        "shapiq": 4.749107817070827e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 4.640956214798149e-05,
+        "pointbiserialr": {
+          "r_pb": 0.10852763621523125,
+          "p_value": 0.005683542387509339
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 4.592742165502664e-05,
+        "pointbiserialr": {
+          "r_pb": 0.03327647175140093,
+          "p_value": 0.3977316110427336
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 4.3189035125528716e-05,
+        "pointbiserialr": {
+          "r_pb": -0.02620659131929397,
+          "p_value": 0.505451196095492
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 4.3171081374891896e-05,
+        "pointbiserialr": {
+          "r_pb": 0.059703071535011296,
+          "p_value": 0.12896089683944947
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 4.103536586610043e-05,
+        "pointbiserialr": {
+          "r_pb": -0.06434325227929052,
+          "p_value": 0.1017463931642003
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 4.022501878840351e-05,
+        "pointbiserialr": {
+          "r_pb": 0.08687721159561543,
+          "p_value": 0.02700500490499789
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 3.926904036030224e-05,
+        "pointbiserialr": {
+          "r_pb": 0.040921765821884684,
+          "p_value": 0.2982829582369679
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 3.90900733705505e-05,
+        "pointbiserialr": {
+          "r_pb": 0.23783798970993236,
+          "p_value": 8.74023705897373e-10
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 3.84305411403886e-05,
+        "pointbiserialr": {
+          "r_pb": 0.23783798970993242,
+          "p_value": 8.740237058973917e-10
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_FilterGenesTopK": {
+        "shapiq": 3.792450429256972e-05,
+        "pointbiserialr": {
+          "r_pb": -0.023682435182040277,
+          "p_value": 0.5473227001845719
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_NormalizeTotalLog1P": {
+        "shapiq": 3.683522489317771e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.1.normalize_NormalizeTotalLog1P": {
+        "shapiq": 3.641552100208735e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 3.405706561382769e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.2.filter.gene_FilterGenesTopK x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 3.356260269412434e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.2.filter.gene_FilterGenesTopK x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 3.1652881889620596e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 3.0134094911537725e-05,
+        "pointbiserialr": {
+          "r_pb": -0.03711563785201405,
+          "p_value": 0.34552197183484956
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 2.9260802110636284e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.2.filter.gene_FilterGenesTopK x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 2.866476597011235e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_ScTransform": {
+        "shapiq": 2.7185659422024253e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_FilterGenesTopK": {
+        "shapiq": 2.6648438052562194e-05,
+        "pointbiserialr": {
+          "r_pb": -0.05428807747832512,
+          "p_value": 0.16749470066781155
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 2.3964077992871147e-05,
+        "pointbiserialr": {
+          "r_pb": -0.11310096975361665,
+          "p_value": 0.003941866866644076
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_NormalizePlaceHolder": {
+        "shapiq": 2.3565158156056582e-05,
+        "pointbiserialr": {
+          "r_pb": 0.09246516276822059,
+          "p_value": 0.018558641567025677
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_NormalizeTotal": {
+        "shapiq": 2.3448613621948067e-05,
+        "pointbiserialr": {
+          "r_pb": 0.08888242334793758,
+          "p_value": 0.02365489991623077
+        }
+      },
+      "onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 2.286332130601668e-05,
+        "pointbiserialr": {
+          "r_pb": -0.023502652946084588,
+          "p_value": 0.5503690197627447
+        }
+      },
+      "onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 2.1196996722033415e-05,
+        "pointbiserialr": {
+          "r_pb": 0.009839565737268928,
+          "p_value": 0.8025897414495295
+        }
+      },
+      "onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 2.0415871512959354e-05,
+        "pointbiserialr": {
+          "r_pb": -0.01884601167467927,
+          "p_value": 0.6320400675509606
+        }
+      },
+      "onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 1.972769396787485e-05,
+        "pointbiserialr": {
+          "r_pb": 0.021722733833572396,
+          "p_value": 0.580970261231768
+        }
+      },
+      "onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 1.6817842339649727e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 1.6284284597806444e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_NormalizeTotal": {
+        "shapiq": 1.510521315326274e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_NormalizePlaceHolder": {
+        "shapiq": 1.4885556168197385e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 1.3559127304704096e-05,
+        "pointbiserialr": {
+          "r_pb": -0.03443282148564389,
+          "p_value": 0.3815283518962117
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.1.normalize_ScaleFeature": {
+        "shapiq": 1.3356355755395844e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_ScaleFeature": {
+        "shapiq": 1.3042305729085196e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.1.normalize_ScaleFeature": {
+        "shapiq": 1.3005343852661773e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 1.280753999445832e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 1.2624127578320441e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 1.2335585864635611e-05,
+        "pointbiserialr": {
+          "r_pb": 0.2378379897099324,
+          "p_value": 8.74023705897373e-10
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 1.1977611847937508e-05,
+        "pointbiserialr": {
+          "r_pb": 0.23783798970993242,
+          "p_value": 8.740237058973917e-10
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_FilterGenesRegression": {
+        "shapiq": 1.0316390862851629e-05,
+        "pointbiserialr": {
+          "r_pb": -0.0348625014471372,
+          "p_value": 0.37561196950468617
+        }
+      },
+      "onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_FilterGenesTopK x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 1.0058845827009548e-05,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 9.91050173627106e-06,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 9.401193328584112e-06,
+        "pointbiserialr": {
+          "r_pb": -0.0958926749421373,
+          "p_value": 0.014608349654741734
+        }
+      },
+      "onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_FilterGenesTopK x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 9.055522802986963e-06,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_FilterGenesTopK": {
+        "shapiq": 8.309638601535523e-06,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 7.446993760310379e-06,
+        "pointbiserialr": {
+          "r_pb": -0.003925158062025815,
+          "p_value": 0.9205621115366937
+        }
+      },
+      "onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_FilterGenesRegression": {
+        "shapiq": 7.224721612135185e-06,
+        "pointbiserialr": {
+          "r_pb": -0.05729152250943583,
+          "p_value": 0.1451757389097141
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 6.487781884812333e-06,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 6.434911675900393e-06,
+        "pointbiserialr": {
+          "r_pb": 0.05865132250093008,
+          "p_value": 0.13585116079458492
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 6.348748538184827e-06,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.2.filter.gene_FilterGenesTopK x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 6.238302081492548e-06,
+        "pointbiserialr": {
+          "r_pb": -0.0597685834641688,
+          "p_value": 0.12854084252934606
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 6.117696883377536e-06,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.2.filter.gene_FilterGenesRegression": {
+        "shapiq": 6.06720239954948e-06,
+        "pointbiserialr": {
+          "r_pb": -0.11851135264892969,
+          "p_value": 0.002514120633020894
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_FilterGenesRegression": {
+        "shapiq": 5.255429345114305e-06,
+        "pointbiserialr": {
+          "r_pb": -0.030191113480621173,
+          "p_value": 0.4429439825726214
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 5.173130227119717e-06,
+        "pointbiserialr": {
+          "r_pb": -0.05814657237623217,
+          "p_value": 0.13925703017713
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_NormalizeTotal": {
+        "shapiq": 4.7854025625129375e-06,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 4.522584453504583e-06,
+        "pointbiserialr": {
+          "r_pb": -0.04563322063932879,
+          "p_value": 0.24605137422255519
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_GaussRandProjFeature": {
+        "shapiq": 4.304988281172241e-06,
+        "pointbiserialr": {
+          "r_pb": -0.003925158062025815,
+          "p_value": 0.9205621115366937
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.2.filter.gene_FilterGenesRegression": {
+        "shapiq": 4.137118274209897e-06,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 4.098000190207101e-06,
+        "pointbiserialr": {
+          "r_pb": -0.05783787758488387,
+          "p_value": 0.14137208238218854
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 4.062245896042553e-06,
+        "pointbiserialr": {
+          "r_pb": 0.07540579720293332,
+          "p_value": 0.055042034259481745
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 3.703730532236723e-06,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 3.675135501902103e-06,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.2.filter.gene_FilterGenesTopK x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 3.302662017972746e-06,
+        "pointbiserialr": {
+          "r_pb": -0.029682573922371558,
+          "p_value": 0.45066769927971334
+        }
+      },
+      "onehot__pipeline.2.filter.gene_FilterGenesRegression": {
+        "shapiq": 3.3011552495363324e-06,
+        "pointbiserialr": {
+          "r_pb": -0.19573643444350008,
+          "p_value": 5.122423962470704e-07
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.2.filter.gene_FilterGenesRegression": {
+        "shapiq": 2.9730248492777425e-06,
+        "pointbiserialr": {
+          "r_pb": -0.07561810567562019,
+          "p_value": 0.054359407221304466
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.1.normalize_ScTransform": {
+        "shapiq": 2.963911210953255e-06,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_ScTransform": {
+        "shapiq": 2.9138162954166304e-06,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_GaussRandProjFeature": {
+        "shapiq": 2.825012085167812e-06,
+        "pointbiserialr": {
+          "r_pb": 0.1813376150238224,
+          "p_value": 3.388275438475345e-06
+        }
+      },
+      "onehot__pipeline.3.feature.cell_GaussRandProjFeature": {
+        "shapiq": 2.7660040072730285e-06,
+        "pointbiserialr": {
+          "r_pb": -0.002143318086352986,
+          "p_value": 0.9565729045365028
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_WeightedFeaturePCA": {
+        "shapiq": 2.643375966397746e-06,
+        "pointbiserialr": {
+          "r_pb": -0.003925158062025816,
+          "p_value": 0.9205621115366937
+        }
+      },
+      "onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_FilterGenesRegression x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 2.5930722768885295e-06,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.3.feature.cell_GaussRandProjFeature": {
+        "shapiq": 2.5561507562289596e-06,
+        "pointbiserialr": {
+          "r_pb": -0.0958926749421373,
+          "p_value": 0.014608349654741734
+        }
+      },
+      "onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_FilterGenesRegression x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 2.328677582228831e-06,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.2.filter.gene_FilterGenesTopK x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 2.23799376892623e-06,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_WeightedFeatureSVD": {
+        "shapiq": 2.2268701372930656e-06,
+        "pointbiserialr": {
+          "r_pb": -0.003925158062025816,
+          "p_value": 0.9205621115366937
+        }
+      },
+      "onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_FilterGenesTopK x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 2.1683524451829147e-06,
+        "pointbiserialr": {
+          "r_pb": -0.021903789357864197,
+          "p_value": 0.5778214679968806
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_CellSVD": {
+        "shapiq": 2.1639344174186833e-06,
+        "pointbiserialr": {
+          "r_pb": -0.003925158062025815,
+          "p_value": 0.9205621115366937
+        }
+      },
+      "onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_FilterGenesRegression": {
+        "shapiq": 2.144293369836072e-06,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.2.filter.gene_HighlyVariableGenesRawCount x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 2.1216116187906546e-06,
+        "pointbiserialr": {
+          "r_pb": -0.07414130237150854,
+          "p_value": 0.05925693477804492
+        }
+      },
+      "onehot__pipeline.2.filter.gene_FilterGenesTopK x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 2.121096412474596e-06,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 2.084317612507838e-06,
+        "pointbiserialr": {
+          "r_pb": 0.07641102623121855,
+          "p_value": 0.051871966670900965
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.2.filter.gene_FilterGenesRegression x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 1.9951621260193496e-06,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 1.9815087562387998e-06,
+        "pointbiserialr": {
+          "r_pb": 0.16778529054317,
+          "p_value": 1.760034743515057e-05
+        }
+      },
+      "onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_FilterGenesRegression": {
+        "shapiq": 1.875601111545932e-06,
+        "pointbiserialr": {
+          "r_pb": 0.024387155042930656,
+          "p_value": 0.5354624300440366
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 1.8576936297059428e-06,
+        "pointbiserialr": {
+          "r_pb": 0.16778529054317,
+          "p_value": 1.760034743515057e-05
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.1.normalize_ScaleFeature": {
+        "shapiq": 1.85541179888843e-06,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.2.filter.gene_FilterGenesRegression x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 1.7796063378497546e-06,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_WeightedFeaturePCA": {
+        "shapiq": 1.7792600525169948e-06,
+        "pointbiserialr": {
+          "r_pb": 0.1813376150238224,
+          "p_value": 3.388275438475345e-06
+        }
+      },
+      "onehot__pipeline.2.filter.gene_FilterGenesRegression x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 1.6503617064108115e-06,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 1.6403096686890904e-06,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_WeightedFeaturePCA": {
+        "shapiq": 1.6262350172923628e-06,
+        "pointbiserialr": {
+          "r_pb": 0.08687721159561543,
+          "p_value": 0.02700500490499789
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.2.filter.gene_HighlyVariableGenesRawCount x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 1.6006359831964491e-06,
+        "pointbiserialr": {
+          "r_pb": -0.030165353462594444,
+          "p_value": 0.44333340227111834
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.3.feature.cell_WeightedFeaturePCA": {
+        "shapiq": 1.5714427045670289e-06,
+        "pointbiserialr": {
+          "r_pb": -0.09589267494213731,
+          "p_value": 0.014608349654741734
+        }
+      },
+      "onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_FilterGenesRegression x onehot__pipeline.3.feature.cell_GaussRandProjFeature": {
+        "shapiq": 1.5517838830049753e-06,
+        "pointbiserialr": {
+          "r_pb": 0.00983956573726893,
+          "p_value": 0.8025897414495295
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 1.497379420304261e-06,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_FilterGenesRegression": {
+        "shapiq": 1.4747659327672377e-06,
+        "pointbiserialr": {
+          "r_pb": 0.008302473487137111,
+          "p_value": 0.8329324877993196
+        }
+      },
+      "onehot__pipeline.2.filter.gene_FilterGenesRegression x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 1.4672545300049216e-06,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.3.feature.cell_GaussRandProjFeature": {
+        "shapiq": 1.4571313368968937e-06,
+        "pointbiserialr": {
+          "r_pb": 0.043097601161743875,
+          "p_value": 0.2733078604008095
+        }
+      },
+      "onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_CellSVD": {
+        "shapiq": 1.346724268867144e-06,
+        "pointbiserialr": {
+          "r_pb": 0.1813376150238224,
+          "p_value": 3.388275438475345e-06
+        }
+      },
+      "onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_WeightedFeatureSVD": {
+        "shapiq": 1.3373670209885613e-06,
+        "pointbiserialr": {
+          "r_pb": 0.1813376150238224,
+          "p_value": 3.388275438475345e-06
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_FilterGenesRegression": {
+        "shapiq": 1.331998969350265e-06,
+        "pointbiserialr": {
+          "r_pb": 0.0404889870220162,
+          "p_value": 0.30342638728282223
+        }
+      },
+      "onehot__pipeline.2.filter.gene_FilterGenesRegression x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 1.2410695008743332e-06,
+        "pointbiserialr": {
+          "r_pb": -0.07398141829314273,
+          "p_value": 0.05980841895074751
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.3.feature.cell_WeightedFeatureSVD": {
+        "shapiq": 1.2287926144130902e-06,
+        "pointbiserialr": {
+          "r_pb": -0.09589267494213731,
+          "p_value": 0.014608349654741734
+        }
+      },
+      "onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_FilterGenesTopK x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 1.1868699044512472e-06,
+        "pointbiserialr": {
+          "r_pb": 0.0432513894271578,
+          "p_value": 0.2715982543470085
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.3.feature.cell_CellSVD": {
+        "shapiq": 1.1810330773718649e-06,
+        "pointbiserialr": {
+          "r_pb": -0.09589267494213728,
+          "p_value": 0.014608349654741734
+        }
+      },
+      "onehot__pipeline.2.filter.gene_HighlyVariableGenesRawCount": {
+        "shapiq": 1.1699674359406734e-06,
+        "pointbiserialr": {
+          "r_pb": -0.1961594479534548,
+          "p_value": 4.835246194044048e-07
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.3.feature.cell_WeightedFeaturePCA": {
+        "shapiq": 1.1387626659052546e-06,
+        "pointbiserialr": {
+          "r_pb": -0.05783787758488387,
+          "p_value": 0.14137208238218854
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.2.filter.gene_FilterGenesRegression x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 1.1372381077490968e-06,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_WeightedFeaturePCA": {
+        "shapiq": 1.123955368612058e-06,
+        "pointbiserialr": {
+          "r_pb": 0.10852763621523125,
+          "p_value": 0.005683542387509339
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.3.feature.cell_GaussRandProjFeature": {
+        "shapiq": 1.1108035160689714e-06,
+        "pointbiserialr": {
+          "r_pb": 0.040921765821884684,
+          "p_value": 0.2982829582369679
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_WeightedFeaturePCA": {
+        "shapiq": 1.0644218581518667e-06,
+        "pointbiserialr": {
+          "r_pb": 0.16778529054317,
+          "p_value": 1.760034743515057e-05
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.3.feature.cell_GaussRandProjFeature": {
+        "shapiq": 1.044198329113413e-06,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_GaussRandProjFeature": {
+        "shapiq": 1.0354245425853181e-06,
+        "pointbiserialr": {
+          "r_pb": -0.01884601167467927,
+          "p_value": 0.6320400675509606
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.2.filter.gene_FilterGenesRegression x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 1.0188799889691386e-06,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 1.0104186341534713e-06,
+        "pointbiserialr": {
+          "r_pb": 0.05758274959092563,
+          "p_value": 0.14313863333109508
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.3.feature.cell_WeightedFeaturePCA": {
+        "shapiq": 1.0059901916010799e-06,
+        "pointbiserialr": {
+          "r_pb": -0.05814657237623218,
+          "p_value": 0.13925703017713
+        }
+      },
+      "onehot__pipeline.2.filter.gene_FilterGenesRegression x onehot__pipeline.3.feature.cell_GaussRandProjFeature": {
+        "shapiq": 9.402488551098183e-07,
+        "pointbiserialr": {
+          "r_pb": -0.07398141829314273,
+          "p_value": 0.05980841895074751
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.2.filter.gene_HighlyVariableGenesRawCount": {
+        "shapiq": 9.392350581881975e-07,
+        "pointbiserialr": {
+          "r_pb": -0.07567908048774061,
+          "p_value": 0.05416466491542957
+        }
+      },
+      "onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes x onehot__pipeline.3.feature.cell_GaussRandProjFeature": {
+        "shapiq": 9.263154828865428e-07,
+        "pointbiserialr": {
+          "r_pb": 0.009839565737268928,
+          "p_value": 0.8025897414495295
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.3.feature.cell_WeightedFeaturePCA": {
+        "shapiq": 9.171007605953029e-07,
+        "pointbiserialr": {
+          "r_pb": 0.013848525918758842,
+          "p_value": 0.7249416392561059
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 9.022386856086239e-07,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 8.881826275039407e-07,
+        "pointbiserialr": {
+          "r_pb": -0.06484556126520119,
+          "p_value": 0.09909692876274105
+        }
+      },
+      "onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_HighlyVariableGenesRawCount x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 8.820662936379883e-07,
+        "pointbiserialr": {
+          "r_pb": -0.023502652946084588,
+          "p_value": 0.5503690197627447
+        }
+      },
+      "onehot__pipeline.3.feature.cell_WeightedFeaturePCA": {
+        "shapiq": 8.79053589755088e-07,
+        "pointbiserialr": {
+          "r_pb": -0.0021433180863529877,
+          "p_value": 0.9565729045365028
+        }
+      },
+      "onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_WeightedFeaturePCA": {
+        "shapiq": 8.706016068185171e-07,
+        "pointbiserialr": {
+          "r_pb": -0.01884601167467927,
+          "p_value": 0.6320400675509606
+        }
+      },
+      "onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.3.feature.cell_GaussRandProjFeature": {
+        "shapiq": 8.664718595397169e-07,
+        "pointbiserialr": {
+          "r_pb": -0.05550692020898845,
+          "p_value": 0.15814566872685304
+        }
+      },
+      "onehot__pipeline.3.feature.cell_CellSVD": {
+        "shapiq": 8.653028080553205e-07,
+        "pointbiserialr": {
+          "r_pb": -0.0021433180863529816,
+          "p_value": 0.9565729045365028
+        }
+      },
+      "onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes x onehot__pipeline.2.filter.gene_HighlyVariableGenesRawCount x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 8.532179565094385e-07,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.3.feature.cell_WeightedFeaturePCA": {
+        "shapiq": 8.478161184633554e-07,
+        "pointbiserialr": {
+          "r_pb": -0.003782496883133847,
+          "p_value": 0.923440284335641
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_WeightedFeaturePCA": {
+        "shapiq": 8.42822076410613e-07,
+        "pointbiserialr": {
+          "r_pb": 0.16778529054317,
+          "p_value": 1.760034743515057e-05
+        }
+      },
+      "onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_WeightedFeaturePCA": {
+        "shapiq": 8.159157929487692e-07,
+        "pointbiserialr": {
+          "r_pb": 0.021722733833572396,
+          "p_value": 0.580970261231768
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.3.feature.cell_GaussRandProjFeature": {
+        "shapiq": 8.146524945209309e-07,
+        "pointbiserialr": {
+          "r_pb": 0.013848525918758842,
+          "p_value": 0.7249416392561059
+        }
+      },
+      "onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_FilterGenesTopK x onehot__pipeline.3.feature.cell_WeightedFeatureSVD": {
+        "shapiq": 8.046787529454573e-07,
+        "pointbiserialr": {
+          "r_pb": 0.04325138942715781,
+          "p_value": 0.2715982543470085
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.3.feature.cell_WeightedFeaturePCA": {
+        "shapiq": 7.857634174313732e-07,
+        "pointbiserialr": {
+          "r_pb": 0.07641102623121855,
+          "p_value": 0.051871966670900965
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_FilterGenesTopK": {
+        "shapiq": 7.82304296289274e-07,
+        "pointbiserialr": {
+          "r_pb": -0.03428809124468131,
+          "p_value": 0.38353395858705325
+        }
+      },
+      "onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_HighlyVariableGenesRawCount x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 7.661709835034765e-07,
+        "pointbiserialr": {
+          "r_pb": 0.00983956573726893,
+          "p_value": 0.8025897414495295
+        }
+      },
+      "onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.2.filter.gene_HighlyVariableGenesRawCount x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 7.655879544436935e-07,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.2.filter.gene_FilterGenesRegression x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 7.273641057821737e-07,
+        "pointbiserialr": {
+          "r_pb": -0.047238111495874376,
+          "p_value": 0.22981530862255073
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 7.057646214357279e-07,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.3.feature.cell_WeightedFeatureSVD": {
+        "shapiq": 6.866998498118009e-07,
+        "pointbiserialr": {
+          "r_pb": -0.0021433180863529877,
+          "p_value": 0.9565729045365028
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 6.85279991678701e-07,
+        "pointbiserialr": {
+          "r_pb": 0.16778529054316998,
+          "p_value": 1.760034743515057e-05
+        }
+      },
+      "onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.3.feature.cell_WeightedFeaturePCA": {
+        "shapiq": 6.838478366546459e-07,
+        "pointbiserialr": {
+          "r_pb": 0.04309760116174388,
+          "p_value": 0.2733078604008095
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 6.723016514026441e-07,
+        "pointbiserialr": {
+          "r_pb": 0.16778529054317,
+          "p_value": 1.760034743515057e-05
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 6.721290618137696e-07,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes x onehot__pipeline.3.feature.cell_WeightedFeatureSVD": {
+        "shapiq": 6.707018005569888e-07,
+        "pointbiserialr": {
+          "r_pb": 0.00983956573726893,
+          "p_value": 0.8025897414495295
+        }
+      },
+      "onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_FilterGenesRegression x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 6.652723784152606e-07,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_GaussRandProjFeature": {
+        "shapiq": 6.573561575950928e-07,
+        "pointbiserialr": {
+          "r_pb": 0.16778529054317,
+          "p_value": 1.760034743515057e-05
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 6.564770802697008e-07,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_GaussRandProjFeature": {
+        "shapiq": 6.376241900278045e-07,
+        "pointbiserialr": {
+          "r_pb": 0.16778529054317,
+          "p_value": 1.760034743515057e-05
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.3.feature.cell_GaussRandProjFeature": {
+        "shapiq": 6.372112390847013e-07,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_GaussRandProjFeature": {
+        "shapiq": 6.304937928411467e-07,
+        "pointbiserialr": {
+          "r_pb": 0.021722733833572396,
+          "p_value": 0.580970261231768
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.3.feature.cell_GaussRandProjFeature": {
+        "shapiq": 6.213337958561137e-07,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.2.filter.gene_FilterGenesRegression x onehot__pipeline.3.feature.cell_GaussRandProjFeature": {
+        "shapiq": 5.795260021007948e-07,
+        "pointbiserialr": {
+          "r_pb": -0.030141049166769577,
+          "p_value": 0.4437009943828915
+        }
+      },
+      "onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_FilterGenesRegression x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp": {
+        "shapiq": 5.649142097597088e-07,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.3.feature.cell_GaussRandProjFeature": {
+        "shapiq": 5.627573265590794e-07,
+        "pointbiserialr": {
+          "r_pb": 0.07641102623121855,
+          "p_value": 0.051871966670900965
+        }
+      },
+      "onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.3.feature.cell_WeightedFeaturePCA": {
+        "shapiq": 5.587054636232993e-07,
+        "pointbiserialr": {
+          "r_pb": -0.055506920208988446,
+          "p_value": 0.15814566872685304
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.3.feature.cell_WeightedFeaturePCA": {
+        "shapiq": 5.492671600254124e-07,
+        "pointbiserialr": {
+          "r_pb": 0.07540579720293335,
+          "p_value": 0.055042034259481745
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.3.feature.cell_GaussRandProjFeature": {
+        "shapiq": 5.474707824574097e-07,
+        "pointbiserialr": {
+          "r_pb": 0.07540579720293332,
+          "p_value": 0.055042034259481745
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.3.feature.cell_WeightedFeatureSVD": {
+        "shapiq": 5.332849881864716e-07,
+        "pointbiserialr": {
+          "r_pb": -0.003782496883133847,
+          "p_value": 0.923440284335641
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.2.filter.gene_FilterGenesTopK x onehot__pipeline.3.feature.cell_WeightedFeatureSVD": {
+        "shapiq": 5.196274674195231e-07,
+        "pointbiserialr": {
+          "r_pb": -0.029682573922371565,
+          "p_value": 0.45066769927971334
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.3.feature.cell_WeightedFeatureSVD": {
+        "shapiq": 5.189284295567512e-07,
+        "pointbiserialr": {
+          "r_pb": 0.03327647175140093,
+          "p_value": 0.3977316110427336
+        }
+      },
+      "onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_HighlyVariableGenesRawCount": {
+        "shapiq": 5.18276524951195e-07,
+        "pointbiserialr": {
+          "r_pb": -0.05825082697963081,
+          "p_value": 0.1385482368470537
+        }
+      },
+      "onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes x onehot__pipeline.2.filter.gene_HighlyVariableGenesRawCount": {
+        "shapiq": 5.164444977242653e-07,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes x onehot__pipeline.3.feature.cell_GaussRandProjFeature": {
+        "shapiq": 5.039214871089898e-07,
+        "pointbiserialr": {
+          "r_pb": 0.09583440293050881,
+          "p_value": 0.014668783032225723
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.3.feature.cell_WeightedFeaturePCA": {
+        "shapiq": 4.955320127816094e-07,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_FilterGenesRegression x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 4.5962135039558975e-07,
+        "pointbiserialr": {
+          "r_pb": -0.023115599213087732,
+          "p_value": 0.5569555846087672
+        }
+      },
+      "onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.2.filter.gene_HighlyVariableGenesRawCount": {
+        "shapiq": 4.589908382931728e-07,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_HighlyVariableGenesRawCount": {
+        "shapiq": 4.543606550054239e-07,
+        "pointbiserialr": {
+          "r_pb": 0.02438715504293066,
+          "p_value": 0.5354624300440366
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_GaussRandProjFeature": {
+        "shapiq": 4.5057511571468735e-07,
+        "pointbiserialr": {
+          "r_pb": 0.08687721159561543,
+          "p_value": 0.02700500490499789
+        }
+      },
+      "onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_WeightedFeatureSVD": {
+        "shapiq": 4.4029164853582063e-07,
+        "pointbiserialr": {
+          "r_pb": -0.01884601167467927,
+          "p_value": 0.6320400675509606
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.3.feature.cell_WeightedFeatureSVD": {
+        "shapiq": 4.4023920984672957e-07,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.2.filter.gene_FilterGenesTopK x onehot__pipeline.3.feature.cell_WeightedFeatureSVD": {
+        "shapiq": 4.3507417482304015e-07,
+        "pointbiserialr": {
+          "r_pb": -0.0597685834641688,
+          "p_value": 0.12854084252934606
+        }
+      },
+      "onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_CellSVD": {
+        "shapiq": 4.336895341357545e-07,
+        "pointbiserialr": {
+          "r_pb": -0.01884601167467927,
+          "p_value": 0.6320400675509606
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.3.feature.cell_CellSVD": {
+        "shapiq": 4.332250367037821e-07,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_FilterGenesRegression x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 4.2689377958088887e-07,
+        "pointbiserialr": {
+          "r_pb": 0.00983956573726893,
+          "p_value": 0.8025897414495295
+        }
+      },
+      "onehot__pipeline.2.filter.gene_FilterGenesRegression x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 4.175347237643431e-07,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_WeightedFeatureSVD": {
+        "shapiq": 4.03417984282175e-07,
+        "pointbiserialr": {
+          "r_pb": 0.08687721159561543,
+          "p_value": 0.02700500490499789
+        }
+      },
+      "onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes x onehot__pipeline.3.feature.cell_WeightedFeatureSVD": {
+        "shapiq": 4.021115278263359e-07,
+        "pointbiserialr": {
+          "r_pb": 0.0958344029305088,
+          "p_value": 0.014668783032225723
+        }
+      },
+      "onehot__pipeline.2.filter.gene_FilterGenesRegression x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 4.0194233600441655e-07,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_GaussRandProjFeature": {
+        "shapiq": 4.0147215216651734e-07,
+        "pointbiserialr": {
+          "r_pb": 0.10852763621523125,
+          "p_value": 0.005683542387509339
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.2.filter.gene_FilterGenesTopK x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 3.917285202354897e-07,
+        "pointbiserialr": {
+          "r_pb": -0.022988752597730155,
+          "p_value": 0.5591224622483356
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes x onehot__pipeline.3.feature.cell_GaussRandProjFeature": {
+        "shapiq": 3.8977170062320905e-07,
+        "pointbiserialr": {
+          "r_pb": 0.059703071535011296,
+          "p_value": 0.12896089683944947
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.3.feature.cell_WeightedFeaturePCA": {
+        "shapiq": 3.8430585604233474e-07,
+        "pointbiserialr": {
+          "r_pb": -0.02620659131929397,
+          "p_value": 0.505451196095492
+        }
+      },
+      "onehot__pipeline.2.filter.gene_FilterGenesRegression x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes": {
+        "shapiq": 3.8264712510533405e-07,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.2.filter.gene_FilterGenesRegression x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes x onehot__pipeline.3.feature.cell_GaussRandProjFeature": {
+        "shapiq": 3.7100493766885326e-07,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.3.feature.cell_WeightedFeatureSVD": {
+        "shapiq": 3.693788070469219e-07,
+        "pointbiserialr": {
+          "r_pb": 0.04309760116174388,
+          "p_value": 0.2733078604008095
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.3.feature.cell_WeightedFeaturePCA": {
+        "shapiq": 3.6690019948310097e-07,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.2.filter.gene_HighlyVariableGenesRawCount": {
+        "shapiq": 3.6419400273037337e-07,
+        "pointbiserialr": {
+          "r_pb": -0.03033693925557036,
+          "p_value": 0.44074318485187014
+        }
+      },
+      "onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.3.feature.cell_CellSVD": {
+        "shapiq": 3.6372590025854505e-07,
+        "pointbiserialr": {
+          "r_pb": -0.055506920208988446,
+          "p_value": 0.15814566872685304
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByTopGenes x onehot__pipeline.2.filter.gene_HighlyVariableGenesRawCount": {
+        "shapiq": 3.632143640858329e-07,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.3.feature.cell_GaussRandProjFeature": {
+        "shapiq": 3.586407664735842e-07,
+        "pointbiserialr": {
+          "r_pb": -0.05814657237623217,
+          "p_value": 0.13925703017713
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.3.feature.cell_WeightedFeaturePCA": {
+        "shapiq": 3.5711831193115573e-07,
+        "pointbiserialr": {
+          "r_pb": 0.040921765821884684,
+          "p_value": 0.2982829582369679
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.3.feature.cell_WeightedFeatureSVD": {
+        "shapiq": 3.5148058505975846e-07,
+        "pointbiserialr": {
+          "r_pb": -0.05783787758488387,
+          "p_value": 0.14137208238218854
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_CellSVD": {
+        "shapiq": 3.5078111088620666e-07,
+        "pointbiserialr": {
+          "r_pb": 0.16778529054317,
+          "p_value": 1.760034743515057e-05
+        }
+      },
+      "onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.3.feature.cell_WeightedFeatureSVD": {
+        "shapiq": 3.4411470742382204e-07,
+        "pointbiserialr": {
+          "r_pb": -0.055506920208988446,
+          "p_value": 0.15814566872685304
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.3.feature.cell_CellSVD": {
+        "shapiq": 3.405796372110536e-07,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_ScaleFeature x onehot__pipeline.2.filter.gene_HighlyVariableGenesRawCount": {
+        "shapiq": 3.261942858927477e-07,
+        "pointbiserialr": {
+          "r_pb": 0.04048898702201621,
+          "p_value": 0.30342638728282223
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.2.filter.gene_HighlyVariableGenesRawCount": {
+        "shapiq": 3.2616453300332517e-07,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.3.feature.cell_FeatureCellPlaceHolder": {
+        "shapiq": 3.1909888449742737e-07,
+        "pointbiserialr": {
+          "r_pb": 0.0354281486987256,
+          "p_value": 0.36791014894215607
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.3.feature.cell_WeightedFeaturePCA": {
+        "shapiq": 3.1868109839047695e-07,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_CellSVD": {
+        "shapiq": 3.1597983212025705e-07,
+        "pointbiserialr": {
+          "r_pb": 0.16778529054316998,
+          "p_value": 1.760034743515057e-05
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.3.feature.cell_CellSVD": {
+        "shapiq": 3.1354163600118113e-07,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.3.feature.cell_GaussRandProjFeature": {
+        "shapiq": 3.127605597039063e-07,
+        "pointbiserialr": {
+          "r_pb": -0.003782496883133842,
+          "p_value": 0.923440284335641
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.3.feature.cell_WeightedFeatureSVD": {
+        "shapiq": 2.967608905411262e-07,
+        "pointbiserialr": {
+          "r_pb": 0.013848525918758842,
+          "p_value": 0.7249416392561059
+        }
+      },
+      "onehot__pipeline.2.filter.gene_FilterGenesRegression x onehot__pipeline.2.filter.gene_HighlyVariableGenesLogarithmizedByMeanAndDisp x onehot__pipeline.3.feature.cell_GaussRandProjFeature": {
+        "shapiq": 2.948970176293089e-07,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.3.feature.cell_CellSVD": {
+        "shapiq": 2.936158748809381e-07,
+        "pointbiserialr": {
+          "r_pb": 0.07540579720293335,
+          "p_value": 0.055042034259481745
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesScanpyOrder x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.3.feature.cell_WeightedFeaturePCA": {
+        "shapiq": 2.9296763804971503e-07,
+        "pointbiserialr": {
+          "r_pb": -0.034927449166794036,
+          "p_value": 0.3747226302217482
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.3.feature.cell_GaussRandProjFeature": {
+        "shapiq": 2.901792651559013e-07,
+        "pointbiserialr": {
+          "r_pb": -0.05783787758488387,
+          "p_value": 0.14137208238218854
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizeTotal x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.3.feature.cell_WeightedFeaturePCA": {
+        "shapiq": 2.8414549522841025e-07,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.1.normalize_NormalizePlaceHolder x onehot__pipeline.1.normalize_ScTransform x onehot__pipeline.3.feature.cell_WeightedFeaturePCA": {
+        "shapiq": 2.824662653624319e-07,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.0.filter.gene_FilterGenesPlaceHolder x onehot__pipeline.1.normalize_NormalizeTotalLog1P x onehot__pipeline.2.filter.gene_FilterGenesTopK": {
+        "shapiq": 2.7976783908986984e-07,
+        "pointbiserialr": {
+          "r_pb": -0.06449574218304502,
+          "p_value": 0.10093619259548862
+        }
+      },
+      "best_params": {
+        "regressor__max_depth": 7,
+        "regressor__min_samples_leaf": 1,
+        "regressor__min_samples_split": 2,
+        "regressor__n_estimators": 200
+      },
+      "best_mse": 6.843156888533595e-06
+    },
+    "apr_ans": [
+      [
+        "FilterGenesPercentile"
+      ],
+      [
+        "FilterGenesScanpyOrder"
+      ],
+      [
+        "NormalizeTotal"
+      ],
+      [
+        "FilterGenesPercentile",
+        "NormalizeTotal"
+      ],
+      [
+        "FilterGenesScanpyOrder",
+        "NormalizeTotal"
+      ]
+    ]
+  }
+}

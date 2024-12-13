@@ -1,0 +1,50 @@
+{
+  "task": "clustering",
+  "dataset": "Dataset 1:worm_neuron_cell",
+  "method": "SCDEEPCLUSTER",
+  "pattern": {
+    "apr_ans": [
+      [
+        "FilterCellsPlaceHolder"
+      ],
+      [
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "FilterGenesPercentile"
+      ],
+      [
+        "FilterGenesPlaceHolder"
+      ],
+      [
+        "FilterGenesTopK"
+      ],
+      [
+        "HighlyVariableGenesLogarithmizedByTopGenes"
+      ],
+      [
+        "ScaleFeature"
+      ],
+      [
+        "FilterCellsScanpyOrder",
+        "FilterGenesPercentile"
+      ],
+      [
+        "FilterGenesTopK",
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "ScaleFeature",
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "ScaleFeature",
+        "FilterGenesPercentile"
+      ],
+      [
+        "HighlyVariableGenesLogarithmizedByTopGenes",
+        "ScaleFeature"
+      ]
+    ]
+  }
+}

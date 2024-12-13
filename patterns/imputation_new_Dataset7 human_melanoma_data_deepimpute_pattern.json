@@ -1,0 +1,59 @@
+{
+  "task": "imputation_new",
+  "dataset": "Dataset7 human_melanoma_data",
+  "method": "deepimpute",
+  "pattern": {
+    "forest_model": {
+      "onehot__pipeline.3.normalize_NormalizeTotal": {
+        "shapiq": 0.3512754330515861,
+        "pointbiserialr": {
+          "r_pb": 0.48940068552068905,
+          "p_value": 0.4027305415056421
+        }
+      },
+      "onehot__pipeline.3.normalize_ScaleFeature": {
+        "shapiq": 0.29728009896278385,
+        "pointbiserialr": {
+          "r_pb": 0.7140713390667509,
+          "p_value": 0.17545089228300867
+        }
+      },
+      "onehot__pipeline.3.normalize_NormalizeTotal x onehot__pipeline.3.normalize_ScaleFeature": {
+        "shapiq": 0.05777219456434248,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.3.normalize_NormalizePlaceHolder": {
+        "shapiq": 0.03563512638807295,
+        "pointbiserialr": {
+          "r_pb": -0.37661264149725354,
+          "p_value": 0.532071771723096
+        }
+      },
+      "onehot__pipeline.3.normalize_ScTransform x onehot__pipeline.3.normalize_ScaleFeature": {
+        "shapiq": 0.016217680260539057,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.3.normalize_NormalizePlaceHolder x onehot__pipeline.3.normalize_ScTransform": {
+        "shapiq": 0.012094524164994552,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "best_params": {
+        "regressor__max_depth": 3,
+        "regressor__min_samples_leaf": 1,
+        "regressor__min_samples_split": 2,
+        "regressor__n_estimators": 10
+      },
+      "best_mse": NaN
+    },
+    "apr_ans": []
+  }
+}

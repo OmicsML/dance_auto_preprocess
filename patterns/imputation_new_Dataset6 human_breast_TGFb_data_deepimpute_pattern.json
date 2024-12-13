@@ -1,0 +1,59 @@
+{
+  "task": "imputation_new",
+  "dataset": "Dataset6 human_breast_TGFb_data",
+  "method": "deepimpute",
+  "pattern": {
+    "forest_model": {
+      "onehot__pipeline.3.normalize_ScaleFeature": {
+        "shapiq": 0.038786201779047645,
+        "pointbiserialr": {
+          "r_pb": 0.6038830390930959,
+          "p_value": 0.2808089722677076
+        }
+      },
+      "onehot__pipeline.3.normalize_NormalizeTotal": {
+        "shapiq": 0.027523860434691134,
+        "pointbiserialr": {
+          "r_pb": 0.07800754208250649,
+          "p_value": 0.9007785370562835
+        }
+      },
+      "onehot__pipeline.3.normalize_ScTransform": {
+        "shapiq": 0.02379575963815054,
+        "pointbiserialr": {
+          "r_pb": 0.19746195295012,
+          "p_value": 0.7502271629767342
+        }
+      },
+      "onehot__pipeline.3.normalize_ScTransform x onehot__pipeline.3.normalize_ScaleFeature": {
+        "shapiq": 0.011288352042436601,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.3.normalize_NormalizePlaceHolder": {
+        "shapiq": 0.009031851112842557,
+        "pointbiserialr": {
+          "r_pb": 0.03656864680729864,
+          "p_value": 0.9534497321979369
+        }
+      },
+      "onehot__pipeline.3.normalize_NormalizePlaceHolder x onehot__pipeline.3.normalize_NormalizeTotal": {
+        "shapiq": 0.00784966508547465,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "best_params": {
+        "regressor__max_depth": 3,
+        "regressor__min_samples_leaf": 1,
+        "regressor__min_samples_split": 2,
+        "regressor__n_estimators": 10
+      },
+      "best_mse": NaN
+    },
+    "apr_ans": []
+  }
+}

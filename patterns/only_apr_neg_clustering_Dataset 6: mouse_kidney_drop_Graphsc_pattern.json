@@ -1,0 +1,54 @@
+{
+  "task": "clustering",
+  "dataset": "Dataset 6: mouse_kidney_drop",
+  "method": "Graphsc",
+  "pattern": {
+    "apr_ans": [
+      [
+        "FilterCellsPlaceHolder"
+      ],
+      [
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "FilterGenesPlaceHolder"
+      ],
+      [
+        "FilterGenesTopK"
+      ],
+      [
+        "ScaleFeature"
+      ],
+      [
+        "WeightedFeaturePCA"
+      ],
+      [
+        "WeightedFeatureSVD"
+      ],
+      [
+        "FilterGenesPlaceHolder",
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "FilterGenesTopK",
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "WeightedFeaturePCA",
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "WeightedFeatureSVD",
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "FilterGenesPlaceHolder",
+        "WeightedFeaturePCA"
+      ],
+      [
+        "FilterGenesPlaceHolder",
+        "WeightedFeatureSVD"
+      ]
+    ]
+  }
+}

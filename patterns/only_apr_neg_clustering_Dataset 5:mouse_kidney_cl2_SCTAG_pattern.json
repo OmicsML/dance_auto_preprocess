@@ -1,0 +1,42 @@
+{
+  "task": "clustering",
+  "dataset": "Dataset 5:mouse_kidney_cl2",
+  "method": "SCTAG",
+  "pattern": {
+    "apr_ans": [
+      [
+        "CellPCA"
+      ],
+      [
+        "FilterCellsPlaceHolder"
+      ],
+      [
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "FilterGenesPlaceHolder"
+      ],
+      [
+        "FilterGenesTopK"
+      ],
+      [
+        "HighlyVariableGenesRawCount"
+      ],
+      [
+        "ScaleFeature"
+      ],
+      [
+        "ScaleFeature",
+        "FilterCellsPlaceHolder"
+      ],
+      [
+        "FilterGenesPlaceHolder",
+        "ScaleFeature"
+      ],
+      [
+        "ScaleFeature",
+        "HighlyVariableGenesRawCount"
+      ]
+    ]
+  }
+}

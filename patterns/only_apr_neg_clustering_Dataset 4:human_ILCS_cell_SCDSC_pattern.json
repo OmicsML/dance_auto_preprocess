@@ -1,0 +1,35 @@
+{
+  "task": "clustering",
+  "dataset": "Dataset 4:human_ILCS_cell",
+  "method": "SCDSC",
+  "pattern": {
+    "apr_ans": [
+      [
+        "FilterCellsPlaceHolder"
+      ],
+      [
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "FilterGenesPercentile"
+      ],
+      [
+        "FilterGenesPlaceHolder"
+      ],
+      [
+        "FilterGenesTopK"
+      ],
+      [
+        "ScaleFeature"
+      ],
+      [
+        "FilterGenesTopK",
+        "FilterCellsPlaceHolder"
+      ],
+      [
+        "ScaleFeature",
+        "FilterGenesPercentile"
+      ]
+    ]
+  }
+}

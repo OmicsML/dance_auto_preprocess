@@ -1,0 +1,36 @@
+{
+  "task": "clustering",
+  "dataset": "Dataset 3: 10X_PBMC",
+  "method": "SCDEEPCLUSTER",
+  "pattern": {
+    "apr_ans": [
+      [
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "FilterGenesPercentile"
+      ],
+      [
+        "FilterGenesPlaceHolder"
+      ],
+      [
+        "FilterGenesTopK"
+      ],
+      [
+        "ScaleFeature"
+      ],
+      [
+        "FilterCellsScanpyOrder",
+        "FilterGenesPercentile"
+      ],
+      [
+        "FilterGenesTopK",
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "ScaleFeature",
+        "FilterCellsScanpyOrder"
+      ]
+    ]
+  }
+}

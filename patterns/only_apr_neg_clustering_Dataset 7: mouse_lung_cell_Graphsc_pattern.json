@@ -1,0 +1,72 @@
+{
+  "task": "clustering",
+  "dataset": "Dataset 7: mouse_lung_cell",
+  "method": "Graphsc",
+  "pattern": {
+    "apr_ans": [
+      [
+        "FilterCellsPlaceHolder"
+      ],
+      [
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "FilterGenesPercentile"
+      ],
+      [
+        "FilterGenesPlaceHolder"
+      ],
+      [
+        "FilterGenesTopK"
+      ],
+      [
+        "NormalizeTotal"
+      ],
+      [
+        "ScaleFeature"
+      ],
+      [
+        "WeightedFeaturePCA"
+      ],
+      [
+        "WeightedFeatureSVD"
+      ],
+      [
+        "FilterGenesTopK",
+        "FilterCellsPlaceHolder"
+      ],
+      [
+        "WeightedFeaturePCA",
+        "FilterCellsPlaceHolder"
+      ],
+      [
+        "FilterGenesTopK",
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "ScaleFeature",
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "WeightedFeatureSVD",
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "ScaleFeature",
+        "FilterGenesTopK"
+      ],
+      [
+        "WeightedFeaturePCA",
+        "FilterGenesTopK"
+      ],
+      [
+        "WeightedFeatureSVD",
+        "FilterGenesTopK"
+      ],
+      [
+        "ScaleFeature",
+        "WeightedFeaturePCA"
+      ]
+    ]
+  }
+}

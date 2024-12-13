@@ -1,0 +1,38 @@
+{
+  "task": "clustering",
+  "dataset": "Dataset 5:mouse_kidney_cl2",
+  "method": "SCDSC",
+  "pattern": {
+    "apr_ans": [
+      [
+        "FilterCellsPlaceHolder"
+      ],
+      [
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "FilterGenesPlaceHolder"
+      ],
+      [
+        "FilterGenesScanpyOrder"
+      ],
+      [
+        "FilterGenesTopK"
+      ],
+      [
+        "NormalizeTotal"
+      ],
+      [
+        "ScaleFeature"
+      ],
+      [
+        "FilterGenesTopK",
+        "FilterCellsPlaceHolder"
+      ],
+      [
+        "NormalizeTotal",
+        "FilterGenesTopK"
+      ]
+    ]
+  }
+}

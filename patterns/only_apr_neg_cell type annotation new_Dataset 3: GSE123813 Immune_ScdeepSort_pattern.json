@@ -1,0 +1,36 @@
+{
+  "task": "cell type annotation new",
+  "dataset": "Dataset 3: GSE123813 Immune",
+  "method": "ScdeepSort",
+  "pattern": {
+    "apr_ans": [
+      [
+        "FilterGenesScanpyOrder"
+      ],
+      [
+        "FilterGenesTopK"
+      ],
+      [
+        "NormalizeTotal"
+      ],
+      [
+        "ScaleFeature"
+      ],
+      [
+        "WeightedFeaturePCA"
+      ],
+      [
+        "FilterGenesScanpyOrder",
+        "WeightedFeaturePCA"
+      ],
+      [
+        "WeightedFeaturePCA",
+        "FilterGenesTopK"
+      ],
+      [
+        "ScaleFeature",
+        "WeightedFeaturePCA"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "task": "cell type deconvolution",
+  "dataset": "Dataset7:SPOTLight_synthetic",
+  "method": "DSTG",
+  "pattern": {
+    "apr_ans": [
+      [
+        "FilterGenesPercentile"
+      ],
+      [
+        "FilterGenesScanpyOrder"
+      ],
+      [
+        "NormalizePlaceHolder"
+      ],
+      [
+        "ScTransform"
+      ],
+      [
+        "NormalizePlaceHolder",
+        "FilterGenesPercentile"
+      ],
+      [
+        "FilterGenesScanpyOrder",
+        "ScTransform"
+      ]
+    ]
+  }
+}

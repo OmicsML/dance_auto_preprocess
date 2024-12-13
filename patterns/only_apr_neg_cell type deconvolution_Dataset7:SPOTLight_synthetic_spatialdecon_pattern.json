@@ -1,0 +1,47 @@
+{
+  "task": "cell type deconvolution",
+  "dataset": "Dataset7:SPOTLight_synthetic",
+  "method": "spatialdecon",
+  "pattern": {
+    "apr_ans": [
+      [
+        "FilterGenesPercentile"
+      ],
+      [
+        "FilterGenesPlaceHolder"
+      ],
+      [
+        "FilterGenesScanpyOrder"
+      ],
+      [
+        "FilterGenesTopK"
+      ],
+      [
+        "HighlyVariableGenesRawCount"
+      ],
+      [
+        "ScaleFeature"
+      ],
+      [
+        "ScaleFeature",
+        "FilterGenesPercentile"
+      ],
+      [
+        "FilterGenesPlaceHolder",
+        "ScaleFeature"
+      ],
+      [
+        "FilterGenesScanpyOrder",
+        "ScaleFeature"
+      ],
+      [
+        "ScaleFeature",
+        "FilterGenesTopK"
+      ],
+      [
+        "ScaleFeature",
+        "HighlyVariableGenesRawCount"
+      ]
+    ]
+  }
+}

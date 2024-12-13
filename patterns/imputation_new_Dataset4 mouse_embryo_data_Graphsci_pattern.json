@@ -1,0 +1,59 @@
+{
+  "task": "imputation_new",
+  "dataset": "Dataset4 mouse_embryo_data",
+  "method": "Graphsci",
+  "pattern": {
+    "forest_model": {
+      "onehot__pipeline.3.normalize_NormalizeTotal": {
+        "shapiq": 0.13356858356793724,
+        "pointbiserialr": {
+          "r_pb": 0.34637605433082747,
+          "p_value": 0.5679648982354724
+        }
+      },
+      "onehot__pipeline.3.normalize_ScaleFeature": {
+        "shapiq": 0.13235718557039894,
+        "pointbiserialr": {
+          "r_pb": 0.704722203253079,
+          "p_value": 0.1838406000739101
+        }
+      },
+      "onehot__pipeline.3.normalize_ScTransform": {
+        "shapiq": 0.04818454837799073,
+        "pointbiserialr": {
+          "r_pb": -0.06798802628185921,
+          "p_value": 0.9135016919869308
+        }
+      },
+      "onehot__pipeline.3.normalize_NormalizeTotal x onehot__pipeline.3.normalize_ScaleFeature": {
+        "shapiq": 0.026987336317698167,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.3.normalize_ScTransform x onehot__pipeline.3.normalize_ScaleFeature": {
+        "shapiq": 0.024856706897417712,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.3.normalize_NormalizeTotal x onehot__pipeline.3.normalize_ScTransform": {
+        "shapiq": 0.01724637206395468,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "best_params": {
+        "regressor__max_depth": 3,
+        "regressor__min_samples_leaf": 1,
+        "regressor__min_samples_split": 2,
+        "regressor__n_estimators": 10
+      },
+      "best_mse": NaN
+    },
+    "apr_ans": []
+  }
+}

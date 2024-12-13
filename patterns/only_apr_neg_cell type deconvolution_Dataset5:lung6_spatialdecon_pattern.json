@@ -1,0 +1,40 @@
+{
+  "task": "cell type deconvolution",
+  "dataset": "Dataset5:lung6",
+  "method": "spatialdecon",
+  "pattern": {
+    "apr_ans": [
+      [
+        "FilterGenesPercentile"
+      ],
+      [
+        "FilterGenesScanpyOrder"
+      ],
+      [
+        "FilterGenesTopK"
+      ],
+      [
+        "HighlyVariableGenesRawCount"
+      ],
+      [
+        "NormalizeTotal"
+      ],
+      [
+        "NormalizeTotal",
+        "FilterGenesPercentile"
+      ],
+      [
+        "FilterGenesScanpyOrder",
+        "NormalizeTotal"
+      ],
+      [
+        "NormalizeTotal",
+        "FilterGenesTopK"
+      ],
+      [
+        "NormalizeTotal",
+        "HighlyVariableGenesRawCount"
+      ]
+    ]
+  }
+}

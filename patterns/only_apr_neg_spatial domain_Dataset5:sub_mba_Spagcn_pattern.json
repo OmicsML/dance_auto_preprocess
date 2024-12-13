@@ -1,0 +1,42 @@
+{
+  "task": "spatial domain",
+  "dataset": "Dataset5:sub_mba",
+  "method": "Spagcn",
+  "pattern": {
+    "apr_ans": [
+      [
+        "FilterGenesMatch"
+      ],
+      [
+        "FilterGenesScanpyOrder"
+      ],
+      [
+        "ScaleFeature"
+      ],
+      [
+        "WeightedFeatureSVD"
+      ],
+      [
+        "FilterGenesScanpyOrder",
+        "FilterGenesMatch"
+      ],
+      [
+        "ScaleFeature",
+        "FilterGenesMatch"
+      ],
+      [
+        "WeightedFeatureSVD",
+        "FilterGenesMatch"
+      ],
+      [
+        "FilterGenesScanpyOrder",
+        "ScaleFeature"
+      ],
+      [
+        "FilterGenesScanpyOrder",
+        "ScaleFeature",
+        "FilterGenesMatch"
+      ]
+    ]
+  }
+}

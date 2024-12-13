@@ -1,0 +1,32 @@
+{
+  "task": "cell type deconvolution",
+  "dataset": "Dataset4:kidney_3323",
+  "method": "spatialdecon",
+  "pattern": {
+    "apr_ans": [
+      [
+        "FilterGenesPercentile"
+      ],
+      [
+        "FilterGenesPlaceHolder"
+      ],
+      [
+        "HighlyVariableGenesLogarithmizedByMeanAndDisp"
+      ],
+      [
+        "NormalizeTotal"
+      ],
+      [
+        "NormalizeTotalLog1P"
+      ],
+      [
+        "FilterGenesPlaceHolder",
+        "NormalizeTotal"
+      ],
+      [
+        "HighlyVariableGenesLogarithmizedByMeanAndDisp",
+        "NormalizeTotalLog1P"
+      ]
+    ]
+  }
+}

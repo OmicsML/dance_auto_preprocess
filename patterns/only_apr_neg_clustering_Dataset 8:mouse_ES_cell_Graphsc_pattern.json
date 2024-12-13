@@ -1,0 +1,55 @@
+{
+  "task": "clustering",
+  "dataset": "Dataset 8:mouse_ES_cell",
+  "method": "Graphsc",
+  "pattern": {
+    "apr_ans": [
+      [
+        "FilterCellsPlaceHolder"
+      ],
+      [
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "FilterGenesPercentile"
+      ],
+      [
+        "FilterGenesScanpyOrder"
+      ],
+      [
+        "FilterGenesTopK"
+      ],
+      [
+        "ScaleFeature"
+      ],
+      [
+        "WeightedFeaturePCA"
+      ],
+      [
+        "WeightedFeaturePCA",
+        "FilterCellsPlaceHolder"
+      ],
+      [
+        "FilterGenesTopK",
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "WeightedFeaturePCA",
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "WeightedFeaturePCA",
+        "FilterGenesTopK"
+      ],
+      [
+        "ScaleFeature",
+        "WeightedFeaturePCA"
+      ],
+      [
+        "WeightedFeaturePCA",
+        "FilterCellsScanpyOrder",
+        "FilterGenesTopK"
+      ]
+    ]
+  }
+}

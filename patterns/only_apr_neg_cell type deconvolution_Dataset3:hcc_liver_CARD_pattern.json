@@ -1,0 +1,65 @@
+{
+  "task": "cell type deconvolution",
+  "dataset": "Dataset3:hcc_liver",
+  "method": "CARD",
+  "pattern": {
+    "apr_ans": [
+      [
+        "FilterGenesMatch"
+      ],
+      [
+        "FilterGenesPlaceHolder"
+      ],
+      [
+        "FilterGenesScanpyOrder"
+      ],
+      [
+        "HighlyVariableGenesRawCount"
+      ],
+      [
+        "NormalizeTotal"
+      ],
+      [
+        "ScTransform"
+      ],
+      [
+        "FilterGenesPlaceHolder",
+        "FilterGenesMatch"
+      ],
+      [
+        "FilterGenesScanpyOrder",
+        "FilterGenesMatch"
+      ],
+      [
+        "FilterGenesMatch",
+        "HighlyVariableGenesRawCount"
+      ],
+      [
+        "NormalizeTotal",
+        "FilterGenesMatch"
+      ],
+      [
+        "FilterGenesMatch",
+        "ScTransform"
+      ],
+      [
+        "FilterGenesPlaceHolder",
+        "NormalizeTotal"
+      ],
+      [
+        "FilterGenesScanpyOrder",
+        "ScTransform"
+      ],
+      [
+        "FilterGenesPlaceHolder",
+        "NormalizeTotal",
+        "FilterGenesMatch"
+      ],
+      [
+        "FilterGenesScanpyOrder",
+        "FilterGenesMatch",
+        "ScTransform"
+      ]
+    ]
+  }
+}

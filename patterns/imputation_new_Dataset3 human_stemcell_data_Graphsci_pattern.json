@@ -1,0 +1,59 @@
+{
+  "task": "imputation_new",
+  "dataset": "Dataset3 human_stemcell_data",
+  "method": "Graphsci",
+  "pattern": {
+    "forest_model": {
+      "onehot__pipeline.3.normalize_ScTransform": {
+        "shapiq": 1.1745115203857424,
+        "pointbiserialr": {
+          "r_pb": 0.5973104904487903,
+          "p_value": 0.2874999374740312
+        }
+      },
+      "onehot__pipeline.3.normalize_ScaleFeature": {
+        "shapiq": 0.6861684713363647,
+        "pointbiserialr": {
+          "r_pb": 0.6237459150138848,
+          "p_value": 0.2608444618892012
+        }
+      },
+      "onehot__pipeline.3.normalize_ScTransform x onehot__pipeline.3.normalize_ScaleFeature": {
+        "shapiq": 0.3445248646736146,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "onehot__pipeline.3.normalize_NormalizePlaceHolder": {
+        "shapiq": 0.30051434993743903,
+        "pointbiserialr": {
+          "r_pb": -0.41518417745615843,
+          "p_value": 0.48697753074514066
+        }
+      },
+      "onehot__pipeline.3.normalize_NormalizeTotal": {
+        "shapiq": 0.11318702411651609,
+        "pointbiserialr": {
+          "r_pb": -0.34348745397934793,
+          "p_value": 0.5714170571652785
+        }
+      },
+      "onehot__pipeline.3.normalize_NormalizeTotal x onehot__pipeline.3.normalize_ScTransform": {
+        "shapiq": 0.032531460762023914,
+        "pointbiserialr": {
+          "r_pb": NaN,
+          "p_value": NaN
+        }
+      },
+      "best_params": {
+        "regressor__max_depth": 3,
+        "regressor__min_samples_leaf": 1,
+        "regressor__min_samples_split": 2,
+        "regressor__n_estimators": 10
+      },
+      "best_mse": NaN
+    },
+    "apr_ans": []
+  }
+}

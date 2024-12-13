@@ -1,0 +1,42 @@
+{
+  "task": "cell type annotation new",
+  "dataset": "Dataset 2:  CD8+ TIL atlas",
+  "method": "ScdeepSort",
+  "pattern": {
+    "apr_ans": [
+      [
+        "FilterGenesScanpyOrder"
+      ],
+      [
+        "FilterGenesTopK"
+      ],
+      [
+        "HighlyVariableGenesRawCount"
+      ],
+      [
+        "ScTransform"
+      ],
+      [
+        "ScaleFeature"
+      ],
+      [
+        "WeightedFeaturePCA"
+      ],
+      [
+        "WeightedFeatureSVD"
+      ],
+      [
+        "FilterGenesScanpyOrder",
+        "ScaleFeature"
+      ],
+      [
+        "FilterGenesTopK",
+        "ScTransform"
+      ],
+      [
+        "WeightedFeatureSVD",
+        "ScaleFeature"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "task": "clustering",
+  "dataset": "Dataset 1:worm_neuron_cell",
+  "method": "SCTAG",
+  "pattern": {
+    "apr_ans": [
+      [
+        "CellSVD"
+      ],
+      [
+        "FilterCellsPlaceHolder"
+      ],
+      [
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "FilterGenesPercentile"
+      ],
+      [
+        "FilterGenesScanpyOrder"
+      ],
+      [
+        "FilterGenesTopK"
+      ],
+      [
+        "WeightedFeaturePCA"
+      ],
+      [
+        "WeightedFeatureSVD"
+      ],
+      [
+        "CellSVD",
+        "FilterGenesTopK"
+      ],
+      [
+        "FilterGenesTopK",
+        "FilterCellsPlaceHolder"
+      ],
+      [
+        "FilterGenesTopK",
+        "FilterCellsScanpyOrder"
+      ],
+      [
+        "FilterGenesTopK",
+        "FilterGenesPercentile"
+      ],
+      [
+        "FilterGenesScanpyOrder",
+        "FilterGenesTopK"
+      ],
+      [
+        "WeightedFeaturePCA",
+        "FilterGenesTopK"
+      ],
+      [
+        "WeightedFeatureSVD",
+        "FilterGenesTopK"
+      ]
+    ]
+  }
+}
